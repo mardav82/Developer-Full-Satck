@@ -1,0 +1,81 @@
+/* ejemplo.css */
+
+/* 
+	Comentarios
+	de varias
+	líneas
+*/
+
+
+/* Regla de CSS
+	Empieza con un selector
+		Contiene atributos con valores
+		Cada atributo se separa del otro con ;
+*/
+
+
+/* Los IDs se identifican con # en CSS */
+/* No es ideal usar IDs en CSS */
+#voldemort {
+	background-color: turquoise;
+	color: seashell;
+}
+
+body {
+	background-color: green;
+	color: white;
+}
+
+h1 {
+	color: tomato;
+}
+
+/*
+	Selector de etiqueta
+		Seleccionar a toooodas las etiquetas de ese tipo en el HTML
+*/
+h2 {
+	/* Nombre de fuente, tipo de fuente */
+	/* serif, sans-serif, monospace, cursive */
+	font-family: cursive;
+	font-size: 50px;
+}
+
+/*
+	Las clases empiezan con .
+	Se pueden reutilizar
+*/
+.amarillo {
+	color: yellow;
+}
+
+/* Si son dos clases gana la última que aparece en el código */
+/* !important le gana a tooooodo */
+.italica {
+	font-style: italic;
+	color: red !important;
+	/* Bugs */
+}
+
+
+
+/* Especificidad */
+
+/*
+	Si una clase pelea con un selector de etiqueta
+		... Gana la clase por ser más específica!
+	Si una clase pelea con otra clase
+		... Gana la que está última en el código
+*/
+
+
+
+/*
+Etiqueta
+Clase
+ID
+*/
+
+
+
+

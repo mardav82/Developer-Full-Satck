@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <%-
+    include('../partials/head', { titulo })
+  -%>
+  <body>
+    <%- include('../partials/nav') -%>
+    <h1><%= titulo %></h1>
+
+    <!-- Para búsquedas usamos GET -->
+    <!-- Para enviar la info necesitamos que los campos tengan un atributo name que los identifique -->
+    <form action="/busqueda_proceso" method="GET">
+      <label>
+        Término de búsqueda:
+        <input type="search" name="termino">
+      </label>
+      <input type="submit" value="¡Buscar!">
+    </form>
+
+    <ul>
+      <% libros.forEach(libro => { %>
+        <li>
+          <a href="/libro/<%= libro.idLibro %>">
+            <%= libro.titulo %> -
+              <%= libro.autor.nombreCompleto %>:
+            $<%= libro.precio %>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= titulo %></title>
+</head>
+<body>
+    <!-- Título | ID -->
+    <h1><%= titulo %> | <%= id %></h1>
+    <p><%= descripcion %></p>
+    <p>$<%= precio %></p>
+
+    <!-- Si el precio es > 850 entonces le advierto al usuario -->
+    <% if (precio > 850) { %>
+        <p>Che, guarda que esto es caro</p>
+    <% } %>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+/* Pseudo elementos */
+h1 {
+    font-size: 52px;
+    color: teal;
+    text-align: center;
+}
+
+h1::before {
+    /* content: url(imagen.jpg); */
+    /* Unicodes */
+    content: '\260F';
+    font-size: 20px;
+}
+
+h1::after {
+    content: "";
+    background-color: orange;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -20px;
+    left: -100px;
+}

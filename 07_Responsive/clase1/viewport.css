@@ -1,0 +1,52 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+    %:
+    Cuando usamos % nos referimos al XX porciento del elemento padre. Si no hay elemento padre es XX porciento de la pantalla.
+
+    Unidades de viewport:
+    Son relativas al tamaño del... viewport / pantalla
+    No se "reinician" con los elementos padres
+*/
+
+.padre {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: brown;
+}
+
+.hijo1 {
+    background-color: lavender;
+    padding: 20px;
+    width: 50%;
+    /*
+        Los % son un fail en altos
+    */
+    height: 100%;
+}
+
+.hijo2 {
+    background-color: hotpink;
+    padding: 20px;
+    /*
+        Viewport units
+        Viewport width
+    */
+    width: 50vw;
+    /*
+        viewport height
+        "Quiero que midas 100% de alto de la pantalla"
+    */
+    height: 100vh;
+}
+
+.cuadrado {
+    margin: 100px auto;
+    background-color: cadetblue;
+    /* :D */
+    width: 40vw;
+    height: 40vw;
+}

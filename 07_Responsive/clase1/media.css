@@ -1,0 +1,67 @@
+/* media.css */
+
+body {
+    background-color: pink;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cabecera {
+    background-color: yellow;
+    height: 100px;
+}
+
+.seccion {
+    display: flex;
+    height: 300px;
+}
+
+.seccion-izquierda {
+    width: 70%;
+    background-color: teal;
+}
+
+.seccion-derecha {
+    width: 30%;
+    background-color: salmon;
+}
+
+@media (max-width: 767px) {
+    /* Que todo se muestre una cosa abajo de la otra */
+    .seccion {
+        display: block;
+        /* flex-direction: column */
+    }
+    .seccion-derecha,
+    .seccion-izquierda {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+
+
+
+/*
+    Orden de media queries:
+        Max: De mayor a menor (desktop first)
+        Min: De menor a mayor (mobile first)
+
+@media (min-width: 600px) {
+    body {
+        background-color: tomato;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: aquamarine;
+    }
+}
+
+*/
+
+

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.el {
+  width: 130px;
+  height: 130px;
+  background-color: cornflowerblue;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.translate {
+  transition: 200ms transform linear;
+}
+
+.translate:hover{
+  /* transform: translateX(30px); */
+  /* transform: translateY(30px); */
+   transform: translate(10px, 20px); 
+}
+
+.rotate {
+  transition: transform 2s linear;
+  transform-origin: top left;
+}
+
+.rotate:hover {
+  /* transform : rotate(15deg); */
+  transform: rotate(1turn); /* 1turn = 360deg*/
+}
+
+.rotate-circle {
+  transition: 200ms transform ease;
+}
+
+.rotate-circle:hover {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+
+.scale {
+  transition: 200ms ease transform;
+}
+
+/* Para el scale, la unidad 1 es igual al 100% del tamaño del elemento.
+  scale(2) => Que el elemento mida un 200% más, o sea el doble.
+*/
+.scale:hover {
+  transform: scale(1.5);
+}

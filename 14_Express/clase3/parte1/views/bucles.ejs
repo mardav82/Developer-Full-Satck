@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estás en bucles</title>
+</head>
+<body>
+    <h1>Estas en bucles</h1>
+
+    <%= numeros %>
+
+    <p>
+        <% numeros.forEach(numero => { %>
+            El número es: <%= numero %><br>
+        <% }) %>
+    </p>
+
+    <!-- Armar este forEach -->
+    <ul>
+        <% paises.forEach(pais => { %>
+            <li>
+                <strong>
+                    <%= pais.nombre %>
+                </strong>:
+                Acá se habla <%= pais.idioma %>
+            </li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>

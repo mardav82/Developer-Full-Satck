@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <%-
+    include('../partials/head', { titulo })
+  -%>
+  <body>
+    <%- include('../partials/nav') -%>
+    <h1><%= titulo %></h1>
+
+    <form action="/agregar_proceso" method="POST">
+      <label>
+        Título:
+        <input type="text" name="titulo">
+      </label><br>
+      <label>
+        Autor:
+        <!-- <input type="text" name="autor"> -->
+        <!-- Si no hay un value se enví como seleccionado el texto dentro de option. Si hay un value se envía como seleccionado el texto del value -->
+        <select name="autor">
+          <% { autores.forEach(autor => { %>
+            <option value="<%= autor.id %>">
+              <%= autor.nombreCompleto %>
+            </option>
+          <% })} %>
+        </select>
+      </label><br>
+      <label>
+        Precio:
+        <input type="number" name="precio">
+      </label><br>
+      <input type="submit" value="Agregar libro">
+    </form>
+
+  </body>
+</html>

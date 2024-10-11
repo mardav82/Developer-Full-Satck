@@ -1,0 +1,20 @@
+
+.fixed {
+    background-color: darkgrey;
+    /*
+        Es un absolute PERO que te sigue cuando haces scroll
+    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contenido {
+    background-color: pink;
+    max-width: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

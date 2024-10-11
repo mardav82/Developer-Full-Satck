@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.caja {
+  width: 150px;
+  height: 150px;
+  background-color: indigo;
+  margin: 20px;
+}
+
+.circuloCuadrado {
+  /* Agrego la animación */
+  animation-name: circuloCuadrado;
+  animation-duration: 5s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 2s;
+  /* animation-fill-mode: forwards;*/ /* Al finalizar la animación, se le aplican las propiedades del último key*/
+
+
+  /* animation-fill-mode: backwards; */  /* Antes de iniciar la animación, se le aplican las propiedades del primer key*/
+
+  animation-fill-mode: both; /* Es la mezcla de forwards y backwards */
+}
+
+.cambioDeColor {
+  animation-name: cambioDeColor;
+  animation-duration: 10s;
+  /*animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+}
+
+/* Creo una animación que se llama circuloCuadrado */
+@keyframes circuloCuadrado {
+  from {
+    background-color: red;
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 50%;
+  }
+}
+
+
+@keyframes cambioDeColor {
+  0% {
+    background-color: indigo;
+  }
+  30% {
+    background-color: khaki;
+  }
+  40%{
+    background-color: maroon;
+  }
+  100% {
+    background-color: midnightblue;
+  }
+}
+
+
+/* Ejercicio Animación */
+
+.contenedor-auto {
+  width: 600px;
+  height: 500px;
+
+  position: relative;
+
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.auto {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  animation-name: translado;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ventana {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@keyframes translado {
+  0% {
+    transform: translate(0,0);
+  }
+
+  50% {
+    transform: translate(200px,0);
+  }
+
+  60% {
+    transform: translate(250px,-50px);
+  }
+
+  70% {
+    transform: translate(300px,0);
+  }
+
+  100% {
+    transform: translate(700px,0);
+  }
+}
+

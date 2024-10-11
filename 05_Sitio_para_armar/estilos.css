@@ -1,0 +1,231 @@
+
+/* El elemento más grande del HTML */
+:root {
+    /*
+        Variables: Guardar cosas en la memoria del navegador
+        --NOMBRE: VALOR;
+
+        1. Declarar la variable
+    */
+    --blanco:   #FFF;
+    --negro:    #000;
+    --naranja:  #F90;
+    --amarillo: yellow;
+    --gris:     #666;
+    --grisClaro: #BBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Color de fondo parecido a la imagen de fondo
+    para que  MIENTRAS carga la imagen se vea ese color de fondo y no haga un salto visual muy grande */
+    background-color: #27262a;
+    background-image: url(images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*
+    -------------------------------- CABECERA --------------------------------
+*/
+
+.cabecera {
+    /* width: calc(var(--variab) * 1%); */
+    max-width: 1000px;
+    margin: auto;
+    color: var(--naranja);
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/*
+    ----------------------------------------------------------------
+                                CONTENIDO
+    ----------------------------------------------------------------
+*/
+
+.contenido {
+    /* Paso 2: Usar la variable
+        var(--NOMBRE)
+    */
+    border-radius: 6px 6px 0 0;
+    background-color: var(--blanco);
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+/*
+    -------------------------------- NAV --------------------------------
+*/
+
+.nav {
+    border-radius: 6px 6px 0 0;
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+
+    margin-bottom: 40px;
+}
+
+.nav-lista {
+    padding-left: 15px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-lista_item-link {
+    display: block;
+    padding: 0 8px;
+    border-right: 1px solid var(--amarillo);
+    color: var(--blanco);
+    /* normal / bold */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-lista_item-link:hover {
+    color: var(--negro);
+}
+
+
+
+
+
+/*
+    -------------------------------- SLIDER --------------------------------
+*/
+
+.imagen {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/*
+    -------------------------------- ZONA --------------------------------
+*/
+
+.zona {
+    display: grid;
+                        /* 25%  75% */
+    grid-template-columns: 230px 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.zona-categorias {
+    background-color: chocolate;
+}
+
+.zona-productos {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.zona-productos_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.producto-titulo {
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+/*
+    -------------------------------- ZONA --------------------------------
+*/
+
+.newsletter {
+    background-image: linear-gradient(var(--blanco) 70%, var(--grisClaro));
+    border: 1px solid var(--gris);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 12px 35px;
+    max-width: 940px;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.newsletter-form_boton {
+    font-weight: bold;
+    background: none;
+    border: 0;
+    /*
+        Recuperar el cursor que se pierde cuando modifico el background o border de un botón
+    */
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+    -------------------------------- Footer --------------------------------
+*/
+
+.footer {
+    background-color: var(--grisClaro);
+    border-top: var(--gris);
+    padding: 10px 35px;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-info_copy,
+.footer-info_china {
+    padding-right: 20px;
+}
+
+.footer-info_china {
+    border-right: 1px solid var(--gris);
+}
+
+.footer-info_buenos {
+    padding-left: 20px;
+}
+
+.footer-creditos {
+    text-align: right;
+}
+
+.footer-creditos_link {
+    font-family: cursive;
+}

@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: indianred;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav-principal {
+    display: flex;
+}
+
+.nav-principal li {
+    flex-grow: 1;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.desplegable:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.nav a {
+    display: block;
+    padding: 10px;
+    background-color: indigo;
+    color: white;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #333;
+}

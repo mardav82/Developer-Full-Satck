@@ -1,0 +1,13 @@
+/* fuentes.css */
+
+body {
+	background-color: beige;
+}
+
+h1 {
+	font-size: 120px;
+	text-align: center;
+	/* Usamos la fuente */
+	font-family: 'Butterfly Kids', sans-serif;
+}
+

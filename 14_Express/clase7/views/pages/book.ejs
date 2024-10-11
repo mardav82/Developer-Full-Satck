@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <%-
+    include('../partials/head', { titulo })
+  -%>
+  <body>
+    <%- include('../partials/nav') -%>
+    <h1><%= titulo %> - <%= autor %></h1>
+
+    <p>$<%= precio %></p>
+
+    <img src="<%= cover %>" alt="">
+
+  </body>
+</html>

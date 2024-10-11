@@ -1,0 +1,16 @@
+#f1 circle{
+  animation-name: cambioColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cambioColor {
+  from {
+    fill: black;
+  }
+
+  to {
+    fill: red;
+  }
+}

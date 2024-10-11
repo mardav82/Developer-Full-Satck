@@ -1,0 +1,16 @@
+HTML
+CSS
+ - Classes, Ids
+ - Responsive (iniciando) algo de media queries
+ - width, height, background-color
+ - Grid y Flexbox
+ :hover 
+
+JavaScript
+ - Hamb menu.
+
+Accesibilidad
+ - 
+
+GIT
+ - Push, pull, commit

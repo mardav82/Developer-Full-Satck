@@ -1,0 +1,14 @@
+
+body {
+    background-color: hotpink;
+}
+
+/*
+    Portrait: Más alto que ancho
+    Landscape: Más ancho que alto
+*/
+@media (orientation: portrait) and (max-width: 400px) {
+    body {
+        background-color: indianred;
+    }
+}

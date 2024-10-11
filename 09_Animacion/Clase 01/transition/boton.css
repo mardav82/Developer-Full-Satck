@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(40, 128, 211);
+  border-radius: 30px;
+  border: none;
+  /* La transición que queremos aplicar */
+  transition-delay: 0s; /* Demora el arranque */
+  /*
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: ease;
+  */
+
+  /* Una atajo es escribirlo de la siguiente manera: */
+  /* transition: 1s background ease; */
+  transition: 1s all ease;
+}
+
+.btn:hover {
+  background-color: rgb(225, 83, 139);
+  color: black;
+}
+
+.card {
+  display: block;
+  width: 250px;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+  transition: 200ms opacity ease;
+}
+
+/* Es una propiedad que recibe valore de 0 a 1
+  0 = transparente
+  1 = visible
+
+  0.5 = intermedio, se ve pero no tanto.
+*/
+.card:hover {
+  opacity: .5;
+} 

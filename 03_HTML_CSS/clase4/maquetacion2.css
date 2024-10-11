@@ -1,0 +1,36 @@
+/* maquetacion2.css */
+
+body {
+	background-color: pink;
+}
+
+.centrar {
+	/* px unidad absoluta */
+	/* En general es conveniente decirle a los elementos que midan "el 100% disponible" sin pasarse de XX px de ancho. Así conseguimos que se adapten a dispositivos más chicos. */
+	/* Márgen automático a la derecha e izquierda centra el elemento */
+
+	max-width: 600px;
+	margin: auto;
+}
+
+.cabecera {
+	background-color: hotpink;
+	height: 100px;
+}
+
+.contenido {
+	background-color: papayawhip;
+	height: 400px;
+}
+
+.pie {
+	background-color: skyblue;
+	height: 50px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+
+h1 {
+    text-shadow: 2px 2px 0 white,
+                 4px 4px 0 violet;
+}
+
+.uno,
+.dos,
+.tres {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: antiquewhite;
+}
+
+.uno {
+             /*   X     Y   Blur  Color */
+    box-shadow: -10px -10px 30px black;
+
+    /* Resplandor: */
+    box-shadow:   0     0   30px black;
+}
+
+.dos {
+    border-radius: 50%;
+    /* Varias sombras separadas con coma */
+    /* También puedo "emular" bordes usando un blur de 0 y un valor de "expansión" */
+    box-shadow: 0 0 0 0px red,
+                0 0 0 0px blue,
+                0 0 0 0px green;
+    transition: box-shadow 0.5s;
+}
+
+.dos:hover {
+    box-shadow: 0 0 0 20px red,
+                0 0 0 40px blue,
+                0 0 0 60px green;
+}
+
+.tres {
+    /* Sombra interna */
+    box-shadow: inset 0 0 10px black;
+}

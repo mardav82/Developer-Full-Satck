@@ -1,0 +1,15 @@
+
+img {
+    /* grayscale / invert / sepia / brightness / opacity / drop-shadow / etc
+        Usar herramientas de desarrollo de Firefox <3
+    
+    Hue-rotate
+    */
+    filter: hue-rotate(0deg);
+
+    transition: filter 5s;
+}
+
+img:hover {
+    filter: hue-rotate(360deg);
+}

@@ -1,0 +1,51 @@
+/* columnas-floats.css */
+
+body {
+	background-color: skyblue;
+}
+
+.wrapper {
+	background-color: hotpink;
+	max-width: 800px;
+	margin: auto;
+}
+
+.cabecera {
+	background-color: forestgreen;
+	height: 60px;
+}
+
+.izquierda {
+	background-color: purple;
+	height: 300px;
+	width: 20%;
+	float: left;
+}
+
+.medio {
+	background-color: gray;
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+
+.derecha {
+	background-color: peru;
+	height: 300px;
+	width: 30%;
+	float: left;
+}
+
+.pie {
+	background-color: beige;
+	height: 100px;
+	/* "Limpiar" las flotaciones */
+	clear: both;
+}
+
+
+
+
+
+
+

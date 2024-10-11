@@ -1,0 +1,48 @@
+/* ejemplo.scss */
+:root {
+  --rojo: #900;
+}
+
+body {
+  /* background-color: $negro;*/
+  background-image: linear-gradient(#F90, #b36b00);
+  color: #F90;
+}
+
+p {
+  color: var(--rojo);
+}
+
+h2 {
+  color: var(--rojo);
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: purple;
+  }
+}
+
+.cabecera h2 {
+  background-color: tomato;
+}
+
+.cabecera a {
+  background-color: beige;
+}
+
+.cabecera a:hover {
+  background-color: yellow;
+}
+
+.pie-titulo {
+  background-color: purple;
+}
+
+.pie-link {
+  background-color: beige;
+}
+
+.pie-link:hover {
+  background-color: yellow;
+}

@@ -1,0 +1,32 @@
+
+.cloak {
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); 
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+.cloak:focus {
+    clip: auto;
+    width: auto;
+    height: auto;
+    background-color: beige;
+    box-shadow: 0 0 0 3px green;
+    padding: 2px;
+}
+
+.nav {
+    background-color: beige;
+}
+
+.nav a:focus {
+    box-shadow: 0 0 0 3px green;
+}
+
+.principal {
+    background-color: aquamarine;
+    height: 120vh;
+}
+

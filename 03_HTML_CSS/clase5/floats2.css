@@ -1,0 +1,44 @@
+/* floats2.css */
+
+.wrapper {
+	max-width: 1000px;
+	margin: 50px auto;
+}
+
+.uno {
+	/*
+		Duplicar línea: Posicionarse en esa línea
+				Ctrl+C y Ctrl+V
+	*/
+	background-color: beige;
+	width: 80%;
+	height: 200px;
+	float: left;
+}
+
+.dos {
+	/*
+		Alt + Flecha arriba o abajo
+	*/
+	background-color: #93f17b;
+	width: 20%;
+	height: 400px;
+	float: right;
+}
+
+.tres {
+	background-color: purple;
+	width: 80%;
+	height: 200px;
+	float: left;
+}
+
+.cuatro {
+	background-color: pink;
+	height: 100px;
+	clear: both;
+}
+
+
+
+

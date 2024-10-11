@@ -1,0 +1,18 @@
+.padre {
+    background-color: pink;
+    display: grid;
+    /* repeat(cantidad, medida)
+        fr (fragement / fraction)
+        repeat(3, 1fr) --> 3 columnas del mismo tamaño
+        300px 1fr --> Columna fija en px y columna dinámica con lo que sobra de espacio
+    */
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.luke {
+    background-color: powderblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}

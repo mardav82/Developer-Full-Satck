@@ -1,0 +1,136 @@
+<!-- formularios.html -->
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Formularios</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Formularios</h1>
+		
+		<!--
+			inputs:
+				text: Campo alfanumérico
+				submit: Botón que llama a la acción
+				reset: Vuelve el formulario a su estado original
+				button: ... No hace nada! Necesita JavaScript
+				email: Valida direcciones de mail
+				number: Solo números enteros, se puede juntar con min y max
+				y step="20" (sube y baja cada 20)
+				date: datepicker nativo
+				password: Pone puntitos en lo que escribimos
+				
+			textarea:
+				Etiqueta con apertura y cierra.
+				Campo de texto mááááás grande
+				
+			Atributos
+				required: Campo obligatorio
+				placeholder: Texto que se va solo después de darle click
+				value: Contenido del campo
+		-->
+		
+		<form action="enviar.js" method="get">
+			<label>
+				Nombre:
+				<input type="text" placeholder="Escriba aquí su nombre" required>
+			</label><br>
+			
+			<label>
+				E-mail:
+				<input type="email">
+			</label><br>
+			
+			<label>
+				Número:
+				<input type="number" min="100" max="999">
+			</label><br>
+			
+			<label>
+				Fecha:
+				<input type="date">
+			</label><br>
+			
+			<label>
+				Contraseña:
+				<input type="password">
+			</label><br>
+			
+			<label>
+				Comentarios:
+				<textarea></textarea>
+			</label><br>
+			
+			<!--
+				Dropdown
+				Lista de opciones limitada
+			-->
+			<label>
+				País:
+				<select>
+					<option>Argentina</option>
+					<option>Colombia</option>
+					<option>Estonia</option>
+					<option>Perú</option>
+				</select>
+			</label><br>
+			
+			<!-- Datalist
+				 Listado de opciones pero abierto a que el usuario escriba lo que quiera
+			-->
+			<label>
+				País, versión 2:
+				<input type="text" list="paises">
+			</label>
+			<datalist id="paises">
+				<option>Argentina</option>
+				<option>Alemania</option>
+				<option>Colombia</option>
+				<option>Perú</option>
+			</datalist><br>
+			
+			<br>
+			Selecciona tu pizza!<br>
+			<!--
+				Para que solo se pueda seleccionar uno de varios tenemos que "agruparlos" con el mismo atributo name
+				
+				El atributo checked lo tilda de forma predeterminada
+			-->
+			<label>
+				<input type="radio" name="pizza"> Muzzarrella
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="pizza" checked> Napolitana
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="pizza"> Fuggazzetta
+			</label>
+			<br>
+			
+			<label>
+				<input type="checkbox" checked required> Acepta condiciones
+			</label>
+			
+			
+			<br>
+			<input type="submit" value="Enviar formulario">
+			<input type="reset"  value="Resetear el form">
+			<input type="button" value="Este botón no hace nada">
+		</form>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

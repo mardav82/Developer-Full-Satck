@@ -1,0 +1,58 @@
+/* position.css */
+
+.wrapper {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    padding: 20px;
+    max-width: 430px;
+    margin: auto;
+    position: relative;
+}
+
+.cuadrado {
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    Position:
+    - Static: Por default. No trabaja capas, siempre es un elemento después del otro.
+    - Relative: Habilitar el uso de capas. Puede posicionarse por encima de otros elementos. Es relativo a su posición original.
+        Mantiene su espacio original, incluso aunque no lo esté usando
+    - Absolute: Habitatar el uso de capas. Pierde su espacio original (el elemento que le sigue -4- ocupa su espacio).
+        El absoluto se mueve a partir del primer elemento padre no estático que encuentre. Si no encuentra ninguno, se va a la esquina superior izquierda del body. Pierde su tamaño (a solo que se lo digamos de nuevo).
+        En general, trabajos los absolutes con padres relativos.
+
+
+    Si varios elementos pelean por quién aparece más arriba... Gana el último del HTML. A SOLO QUE... Usemos un z-index para ordenar los elementos
+*/
+
+.tres {
+    background-color: blue;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* Para ir hacia arriba: bottom o top negativo */
+    /* Para ir hacia la izquiera: right o left negativo */
+    /*
+    bottom: 50px;
+    left: 150px;
+    z-index: 1;
+    */
+    top: 150px;
+    left: 410px;
+    z-index: 1;
+}
+
+.cuatro {
+    background-color: crimson;
+    position: relative;
+    left: 300px;
+}

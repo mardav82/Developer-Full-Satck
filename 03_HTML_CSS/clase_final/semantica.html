@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semántica</title>
+    <style>
+        .verde {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Etiquetas semánticas -->
+    <h1>Título</h1>
+    <p>El gato está abajo de la mesa y <strong>este contenido es muy importante</strong>.</p>
+
+    <!-- "Nuevas" etiquetas semánticas (2010) -->
+    <nav class="">Barra de navegación / conjunto de enlaces</nav>
+
+    <header class="">Introducción a un contenido</header>
+    <footer class="">Descenlace a ese contenido</footer>
+
+    <main class="contenido">
+        La razón por la que creamos el HTML.
+        Contenido que no se repite en otras páginas (no incluye ela navegación ni el footer).
+        Solo un main por HTML
+    </main>
+
+    <aside>
+        Contenido medio adicional, lo podría sacar y está todo bien
+    </aside>
+    <!--
+        https://html.spec.whatwg.org/#article-or-section
+    -->
+    <article>
+        <h2>Manzanas</h2>
+
+        <section>
+            <h3>Manzanas rojas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus voluptatum praesentium, rem earum natus!</p>
+        </section>
+        <section>
+            <h3>Manzanas verdes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus voluptatum praesentium, rem earum natus!</p>
+        </section>
+    </article>
+
+
+
+
+
+
+
+
+    <!-- Etiquetas no semánticas -->
+    <div class="">Coso, pero en etiqueta de bloque</div>
+    <p>Coso sin significado, armado para <span class="verde">estilizar. Mismo que el div pero en</span> versión etiqueta de línea</p>
+
+
+</body>
+</html>

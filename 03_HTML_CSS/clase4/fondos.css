@@ -1,0 +1,22 @@
+/* fondos.css */
+
+
+/* Blend modes */
+body {
+	/* https://www.sarasoueidan.com/demos/css-blender/ */
+	background-color: red;
+	background-image: url(gatito.jpg);
+
+	/* Cubre el 100% de ancho sin romper la proporción de la imagen
+		1600px ... 4000px
+	*/
+	background-size: cover;
+	/* no-repeat / repeat (default) /
+	   repeat-x  / repeat-y */
+	background-repeat: no-repeat;
+	/* top / right / left / bottom / center */
+						/*  X      Y  */
+	/*
+	background-position: center  center;
+	*/
+}

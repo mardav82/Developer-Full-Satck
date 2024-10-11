@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú hamburguesa</title>
+    <link rel="stylesheet" href="menu-hamburguesa.css">
+</head>
+<body>
+    <h1>Menú hamburguesa</h1>
+
+    <nav class="nav">
+        <!-- <input type="button" value="Menú"> -->
+        <!-- aria-label describe qué hace el botón -->
+        <button class="nav-boton" id="boton" aria-label="Menú desplegable">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <ul class="nav-list" id="navegacion">
+            <li class="nav-list_item">
+                <a class="nav-list_item-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-list_item">
+                <a class="nav-list_item-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-list_item">
+                <a class="nav-list_item-link" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-list_item">
+                <a class="nav-list_item-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        Acá hay contenido
+    </div>
+
+    <!--
+        JavaScript se va a ocupar de los eventos (click, arrastrar, pasar cursor por encima, etc).
+        Creamos un archivo externo y lo enlazamos al pie
+    -->
+    <script src="menu-hamburguesa.js"></script>
+
+</body>
+</html>

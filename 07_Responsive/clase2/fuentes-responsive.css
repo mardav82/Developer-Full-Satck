@@ -1,0 +1,30 @@
+body {
+    background-color: azure;
+}
+
+.padre {
+    padding: 20px;
+    background-color: chartreuse;
+}
+
+h2 {
+    /* 1em = casi siempre 16px */
+    /* rem no se resetea con el padre, siempre usa como referencia el tamaño predeterminado del navegador */
+    font-size: 3rem;
+}
+
+.hijo {
+    padding: 20px;
+    background-color: moccasin;
+    /* Los em se resetean de acuerdo al elemento padre */
+    /* De ahora en más 1em = 24px (16*1.5) */
+    font-size: 1.5em;
+}
+
+h3 {
+    /*
+        Fuente que cambia dependiendo el tamaño de la pantalla
+        Mínimo 16px y a eso le suma el 4% del ancho de la pantalla
+    */
+    font-size: calc(16px + 2vw);
+}

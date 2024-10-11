@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 341px;
+  height: 246px;
+  border: 1px solid black;
+  background-image: url(steps.png);
+  background-size: cover;
+  
+  animation-name: moverBg;
+  animation-duration: 500ms;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+}
+
+@keyframes moverBg {
+  from {
+    background-position: 0;  
+  }
+
+  to {
+    background-position: -4096px;
+  }
+}

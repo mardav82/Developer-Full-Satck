@@ -1,0 +1,42 @@
+/* box-model.css */
+
+body {
+    background-color: rebeccapurple;
+}
+
+h1 {
+    /*
+        RR GG BB / Hexa    (0 - F)
+                 / Decimal (0 - 255)
+        HSL
+
+        #FFF
+        white
+        rgba(255, 255, 255)
+    */
+    background-color: rgba(255, 0, 0, 0,2);
+    width: 300px;
+    height: 200px;
+
+    /* Padding y border modifican el ancho y alto del elemento
+        (excepto que tengamos box-sizing:  border-box;)
+    */
+
+    /* Propiedades de shorthand */
+    padding: 30px;
+    padding-left: 60px;
+
+    /* Con dos valores:
+        1. Arriba y abajo (50px)
+        2. Derecha e izquierda (20px)
+    */
+    margin: 50px 20px;
+
+    /* MDN
+    https://developer.mozilla.org/es/docs/Web/CSS/border-style
+    */
+    border: 5px solid black;
+    border-right: 10px dashed white;
+
+    box-sizing: border-box;
+}

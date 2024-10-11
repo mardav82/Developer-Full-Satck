@@ -1,0 +1,62 @@
+/* vertical.css */
+
+/* Selector universal "Seleccionar todos" */
+/* Reset: Eliminar (algunas) características predeterminadas */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: orange;
+}
+
+.botonera {
+	background-color: pink;
+	margin: 50px;
+	max-width: 200px;
+	/* Eliminar los "puntitos" de la lista */
+	/* MDN -> list style */
+	list-style: none;
+}
+
+.botonera-link {
+	background-color: beige;
+	display: block;
+	color: black;
+	padding: 8px;
+	border-bottom: 1px dashed #666;
+	/* all: Todas las propiedades
+	   0.5s: Medio segundo
+	*/
+	transition: all 0.5s;
+}
+
+/* :hover / :active / :visited / :focus / :link */
+/* Qué sucede cuando le paso el cursor por encima */
+.botonera-link:hover {
+	background-color: yellow;
+	/* Eliminar el subrayado predeterminado */
+	text-decoration: none;
+	padding-left: 25px;
+}
+/* Active: Presión activa del mouse
+.botonera-link:active {
+	background-color: blue;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

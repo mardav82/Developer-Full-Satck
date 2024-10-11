@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Shapes</title>
+		<style>
+			
+			table{
+				max-width: 800px;
+				margin: auto;
+			}
+			table td {
+				border: 1px solid #333;
+			}
+			table img{
+				float: left;
+			}
+			
+			table tr:nth-child(1) img{
+				/* Para alejar el texto de la imagen */
+				padding: 20px;
+				/* circle(RADIO) */
+				shape-outside: circle();
+			}
+			table tr:nth-child(2) img{
+				shape-outside: ellipse(100px 50px);
+			}
+			table tr:nth-child(3) img{
+			
+			}
+			table tr:nth-child(4) img{
+				/*
+					polygon(29px 40px, 97.2% 38.57%, 59px 84.29%)
+				*/
+				shape-outside: polygon(20px 20px,
+									   90%  20%,
+									   50px 80%);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Shapes</h1>
+		
+		<table>
+			<tr>
+				<td>Circle</td>
+				<td>
+					<img src="img/circle.png" alt="shape">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Ellipse</td>
+				<td>
+					<img src="img/ellipse.png" alt="shape">
+					<p>
+Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
+					</p></td>
+			</tr>
+			<tr>
+				<td>Inset</td>
+				<td>
+					<img src="img/inset.png" alt="shape">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p></td>
+			</tr>
+			<tr>
+				<td>Polygon</td>
+				<td>
+					<img src="img/polygon1.png" alt="shape">
+					<p>
+					Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger, releases juice better than cutting. Full moon Whomping Willow three turns should do it lemon drops. Locomotor trunks owl treats that will be 50 points, Mr. Potter. Witch Weekly, he will rise again and he will come for us, headmaster Erumpent horn. Fenrir Grayback horseless carriages ‘zis is a chance many would die for!
+					</p></td>
+			</tr>
+			<tr>
+				<td>Brackets</td>
+				<td>
+					<img src="img/kitten.png" alt="shape">
+					<p>
+					Cat ipsum dolor sit amet, chase mice so unwrap toilet paper pee in the shoe and chase after silly colored fish toys around the house. Peer out window, chatter at birds, lure them to mouth stick butt in face, or burrow under covers, but use lap as chair scream at teh bath so meowwww scamper. Where is my slave? I'm getting hungry jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed who's the baby, kitty loves pigs, so scratch the furniture sit in box eat from dog's food. Eat from dog's food flee in terror at cucumber discovered on floor and lounge in doorway give attitude. Chase dog then run away.<br> Chirp at birds lick arm hair yet spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce nap all day, for purr while eating. Then cats take over the world leave hair everywhere, or chase laser and pee in the shoe but knock dish off table head butt cant eat out of my own dish hide when guests come over, but shove bum in owner's face like camera lens. Refuse to leave cardboard box sit by the fire.<br>
+
+					All of a sudden cat goes crazy intrigued by the shower always hungry or pelt around the house and up and down stairs chasing phantoms. Plan steps for world domination. Lick arm hair sit by the fire why must they do that lick yarn hanging out of own butt meowing non stop for food or hate dog, and find empty spot in cupboard and sleep all day. Rub face on owner pooping rainbow while flying in a toasted bread costume in space and claws in your leg so stare out the window. Rub face on owner lick the plastic bag or pelt around the house and up and down stairs chasing phantoms pelt around the house and up and down stairs chasing.
+					</p>
+				</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

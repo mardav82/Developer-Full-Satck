@@ -1,0 +1,29 @@
+/* flexbox.css */
+
+body {
+	background-color: pink;
+}
+
+.padre {
+	background-color: green;
+	/* Flexbox se define en el elemento padre */
+	display: flex;
+	/* space-between / space-around / space-evenly */
+	/* start / center / end */
+	justify-content: space-between;
+	
+	/* Permite usar más de una línea */
+	flex-wrap: wrap;
+}
+
+.hijo {
+	min-width: 100px;
+	background-color: beige;
+	padding: 15px;
+	border: 1px solid black;
+	/* Que mida lo que necesite para cubrir el 100% del elemento padre */
+	flex-grow: 1;
+}
+
+
+

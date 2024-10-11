@@ -1,0 +1,11 @@
+<div class="contenedor">
+    {{ dataTarjetas.default | json }}
+    <app-tarjeta
+        [categoria]="categoria"
+        [titulo]="titulo"
+        [flex]="flex"
+    ></app-tarjeta>
+    <app-tarjeta></app-tarjeta>
+    <app-tarjeta></app-tarjeta>
+    <app-tarjeta></app-tarjeta>
+</div>

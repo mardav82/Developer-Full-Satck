@@ -1,0 +1,22 @@
+
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    /* clip-path: circle(50px); */
+    clip-path: polygon(50% 0,
+                       50% 0,
+                       100% 100%,
+                       0 100%);
+
+    transition: clip-path 0.5s;
+}
+
+img:hover {
+    /* clip-path: circle(200px); */
+    clip-path:  polygon(0 0,
+                        100% 0,
+                        100% 100%,
+                        0 100%);
+}

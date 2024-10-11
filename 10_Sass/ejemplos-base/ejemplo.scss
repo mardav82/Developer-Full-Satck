@@ -1,0 +1,77 @@
+/* ejemplo.scss */
+
+:root {
+	--rojo: #900;
+}
+
+$naranja: #F90;
+$negro: #222;
+$rojo: #F00;
+
+// Breakpoints
+$m1280: 1280px;
+$m767:  767px;
+
+body {
+	/* background-color: $negro;*/
+	// El equivalente de hoy con HSL
+	background-image: linear-gradient(
+						$naranja, darken($naranja, 15%)
+					  );
+	color: $naranja;
+}
+
+p {
+	color: var(--rojo);
+}
+
+h2 {
+	color: var(--rojo);
+}
+
+@media (max-width: $m767) {
+	body {
+		background-color: purple;
+	}
+}
+
+.cabecera {
+	h2 {
+		background-color: tomato;
+	}
+	a {
+		background-color: beige;
+		
+		// & para que no agregue el espacio
+		&:hover {
+			background-color: yellow;
+		}
+	}
+}
+
+.pie {
+	&-titulo {
+		background-color: purple;
+	}
+	&-link {
+		background-color: beige;
+		
+		&:hover {
+			background-color: yellow;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

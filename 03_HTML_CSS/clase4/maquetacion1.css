@@ -1,0 +1,28 @@
+/* maquetacion1.css */
+
+/*
+	HTML tiene dos tipos de etiquetas
+	1. De bloque (heading (h1-6), p, div)
+		Cubren el 100% de ancho disponible (excepto cuando lo cambiamos o limitamos), incluso aunque no necesiten ese espacio.
+		General un "enter" en los elementos siguientes
+		
+	2. De línea  (img, inputs, a, textarea)
+		Ocupan solo el espacio que necesitan, permiten que otros elementos se ubiquen al lado
+		A veces no toman bien anchos o márgenes
+			(Podemos "arreglarlo" con display: block)
+*/
+
+body {
+	background-color: chocolate;
+}
+
+h1, a, input, p {
+	background-color: green;
+	padding: 20px;
+	width: 400px;
+	margin: 50px;
+}
+
+a {
+	display: block;
+}
